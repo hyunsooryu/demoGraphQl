@@ -1,0 +1,16 @@
+type Query{
+	getBook(id : String):Book
+	getBooks : [Book]
+}
+
+type Book{
+	id: String
+	name: String
+	category: Category
+}
+
+enum Category{
+	HORROR,
+	COMEDY,
+	FANTASY
+}
